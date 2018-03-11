@@ -10,6 +10,13 @@ $(function(){
   $("#footermaster").load("footer.html");
   $("#rightmaster").load("right.html");
 });
+	function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
 </script>
 </head>
 <body>
@@ -27,7 +34,7 @@ $(function(){
 			<div class="row">
 		<div class="col-md-12">
 <div class="gallery">
-			<img src="images/clgCampus/camp1.jpg" width="50%" />
+			<img src="images/clgCampus/camp1.jpg" width="50%" onclick="myFunction(this);/>
 			</div><div class="gallery">
 			<img src="images/clgCampus/camp2.jpg" width="50%" />
 			</div><div class="gallery">
