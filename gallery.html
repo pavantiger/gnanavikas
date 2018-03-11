@@ -3,31 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-	<style>
-		.container {
-    position: relative;
-    display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-}
-	</style>
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script> 
 $(function(){
@@ -58,8 +34,8 @@ $(function(){
 </nav>
 			<div class="row">
 		<div class="col-md-12">
-<div class="gallery">
-			<img src="images/clgCampus/camp1.jpg" width="50%" onclick="myFunction(this);/>
+<div class="gallery"> <a target="_blank" href="images/clgCampus/camp1.jpg">
+	<img src="images/clgCampus/camp1.jpg" width="50%"/></a>
 			</div><div class="gallery">
 			<img src="images/clgCampus/camp2.jpg" width="50%" />
 			</div><div class="gallery">
@@ -69,11 +45,6 @@ $(function(){
 			<img src="images/clgCampus/camp4.jpg" width="50%" />
 			</div>
 				</div></div>
-									 <div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active display-4" aria-current="page" style="font-size: 2rem">Cultural Events 2017</li>  
