@@ -206,7 +206,9 @@ footer {
 .list-right:hover {
   background-color: #cc0000 !important;
   color: #fff; }
-
+.list-group {
+  text-align:left;
+}
 .list-group-item {
   border-radius: 0px !important; }
 
