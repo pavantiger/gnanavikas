@@ -18,6 +18,12 @@ $(function(){
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";
 }
+	function viewImage(url) { 
+    $('#image_zoom').attr("src", url); 
+    $("#imageModalPopUp").modal({ 
+        backdrop: 'static' 
+    }); 
+}
 </script>
 </head>
 <body>
@@ -34,14 +40,14 @@ $(function(){
 </nav>
 			<div class="row">
 		<div class="col-md-12">
-<div class="gallery"> <a target="_blank" href="images/clgCampus/camp1.jpg">
-	<img src="images/clgCampus/camp1.jpg" width="50%"/></a>
-			</div><div class="gallery">
+<div class="gallery" onclick="viewImage('images/clgCampus/camp1.jpg')> 
+	<img src="images/clgCampus/camp1.jpg" width="50%"/>
+			</div><div class="gallery"  onclick="viewImage('images/clgCampus/camp2.jpg')>
 			<img src="images/clgCampus/camp2.jpg" width="50%" />
-			</div><div class="gallery">
+			</div><div class="gallery"  onclick="viewImage('images/clgCampus/camp3.jpg')>
 			<img src="images/clgCampus/camp3.jpg" width="50%" />
 			</div>
-		 <div class="gallery">
+		 <div class="gallery"  onclick="viewImage('images/clgCampus/camp4.jpg')>
 			<img src="images/clgCampus/camp4.jpg" width="50%" />
 			</div>
 				</div></div>
@@ -88,7 +94,18 @@ $(function(){
 		</div>
 	</div>
 </div>
-
+<div id="imageModalPopUp" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"> 
+        <div class="modal-dialog modal-lg"> 
+            <div class="modal-content"> 
+                <div class="modal-body"> 
+                    <img src="" id="image_zoom" style="width: 300px;height: 200px"></img> 
+                </div> 
+                <div class="modal-footer"> 
+                    <button class="btn btn-primary" class="close" data-dismiss="modal" aria-hidden="true">Ok</button> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
 
 
 <div id="footermaster"></div>
