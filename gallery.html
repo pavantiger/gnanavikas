@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>Gallery</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script> 
 
 $(function(){
@@ -40,8 +42,16 @@ $(function(){
 </nav>
 			<div class="row">
 		<div class="col-md-12">
-<div style='float:left;width:100px;margin-bottom:10px;margin-right:10px;' class='col-md-12'><img src='https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?w=940&h=650&auto=compress&cs=tinysrgb' style='height:100px;width:100px;' onclick="viewImage('https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg?w=940&h=650&auto=compress&cs=tinysrgb')"></div>
 			<div class="gallery" >
+  <a href="#myPopup" data-rel="popup" data-position-to="window">
+    <img src="images/clgCampus/camp1.jpg" alt="Skaret View" style="width:200px;"></a>
+
+    <div data-role="popup" id="myPopup">
+     
+      <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	    <img src="images/clgCampus/camp2.jpg" style="width:800px;height:400px;" alt="Skaret View">
+    </div>
+			</div><div class="gallery" >
 			<img src="images/clgCampus/camp2.jpg" width="50%"  onclick="viewImage('images/clgCampus/camp2.jpg')"/>
 			</div><div class="gallery" >
 			<img src="images/clgCampus/camp3.jpg" width="50%"  onclick="viewImage('images/clgCampus/camp3.jpg')"/>
